@@ -35,6 +35,8 @@ func NewServer(opts ...ServerOptionFunc) *ServerConfig {
 }
 
 func main() {
+	fmt.Println("Default values of parameters running...")
+
 	s1 := NewServer()
 	fmt.Printf("S1 Server Port: %d, Timeout: %d\n", s1.Port, s1.Timeout)
 
